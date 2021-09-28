@@ -4,7 +4,7 @@ describe('UserLogin entities', () => {
     it('should throw error when payload doesnot contain needed property', () => {
         //Arange
         const payload = {
-            username: 'aras',
+            username: 'dicoding',
         };
 
         // Action & Assert
@@ -14,7 +14,7 @@ describe('UserLogin entities', () => {
     it('should throw error when payload not meet data type specification', () => {
         //Aramge
         const payload = {
-            username: 'aras',
+            username: 'dicoding',
             password: 12345,
           };
       

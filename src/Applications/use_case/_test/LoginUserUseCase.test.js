@@ -24,7 +24,7 @@ describe('GetAuthenticationUseCase', () => {
         // Mocking
         mockUserRepository.getPasswordByUsername = jest.fn()
             .mockImplementation(() => Promise.resolve('encrypted_password'));
-        mockPasswordHash.comparePassword = jest.fn()
+        mockPasswordHash.compare = jest.fn()
             .mockImplementation(() => Promise.resolve());
         mockAuthenticationTokenManager.createAccessToken = jest.fn()
             .mockImplementation(() => Promise.resolve(expectedAuthentication.accessToken));
